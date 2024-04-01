@@ -1,0 +1,79 @@
+{
+  "tertiary-padding": {
+    "Gap": {
+      "value": "{px.80}",
+      "type": "spacing"
+    },
+    "All padding": {
+      "value": "{px.160}",
+      "type": "spacing"
+    }
+  },
+  "tertiary-radius": {
+    "all_radius": {
+      "value": "{px.160}",
+      "type": "borderRadius"
+    }
+  },
+  "tertiary-text": {
+    "button-text": {
+      "value": "{type.label.medium}",
+      "type": "typography"
+    }
+  },
+  "tertiary-color": {
+    "bg": {
+      "pressed": {
+        "value": "{pallete.cold-grey.50}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "darken",
+              "value": "0.1",
+              "space": "lch"
+            }
+          }
+        }
+      }
+    },
+    "text": {
+      "default": {
+        "value": "{pallete.blue.500}",
+        "type": "color"
+      },
+      "disabled": {
+        "value": "{tertiary-color.text.default}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.4",
+              "space": "lch"
+            }
+          }
+        }
+      }
+    },
+    "icon": {
+      "default": {
+        "value": "{pallete.blue.500}",
+        "type": "color"
+      },
+      "disabled": {
+        "value": "{tertiary-color.icon.default}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.4",
+              "space": "lch"
+            }
+          }
+        }
+      }
+    }
+  }
+}
